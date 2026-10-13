@@ -1,0 +1,19 @@
+AEON AI PLAYGROUND — FIXED BUILD
+
+1. Extract this ZIP to a new folder.
+2. In VS Code, use File > Open Folder and choose the extracted folder containing package.json.
+3. Open Terminal > New Terminal and run each command:
+
+   npm.cmd install
+   npm.cmd run check
+   npm.cmd start
+
+4. Open http://localhost:3000
+5. Open API Keys and add your own provider key.
+6. Test a provider model using the actual inference button.
+7. My Models lets you add custom endpoints. Configurations are stored locally in data/my-models.json; API keys are kept only in backend memory and need re-entering after server restart.
+8. Hugging Face Models searches the official Hub catalog. The Free Access filter is conservative: if free pricing cannot be verified, a route remains Unknown and is excluded.
+
+Security: keep this local app off the public internet. Never commit .env files, credentials, or API keys.
+
+Validation completed before packaging: Node syntax checks passed for server.js and public/app.js; frontend ID-reference check found no missing element IDs. Live provider inference still requires your own key and an accessible model; no live inference success is claimed by this archive.
